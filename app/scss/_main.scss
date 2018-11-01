@@ -1,0 +1,202 @@
+/*!
+ * Main content
+ */
+
+.main {
+
+  &-bg {
+    background: url("../images/main-bg.jpg") center bottom no-repeat;
+  }
+
+  & .all {
+    float: right;
+    margin-top: -15px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 20px;
+
+    & a:hover {
+      color: $green-dark;
+      text-decoration: none;
+    }
+  }
+
+  & h2.title {
+    font-size: 24px;
+    background: url("../images/h-bg.png") left center no-repeat;
+    width: auto;
+    height: 72px;
+    line-height: 26px;
+    padding-left: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  & .jcarousel-control-prev {
+    left: -15px;
+    background: $green;
+    font-size: 38px;
+  }
+
+  & .jcarousel-control-next {
+    right: -15px;
+    background: $green;
+    font-size: 38px;
+  }
+
+  .jcarousel-control-prev, .jcarousel-control-next {
+    top: 48%;
+
+    &:hover {
+      text-decoration: none;
+      color: $green-dark;
+    }
+  }
+
+  & .jcarousel {
+
+    &.reviews {
+
+      & .info {
+        //display: none;
+      }
+    }
+
+
+    & .slider {
+      padding: 20px 0 40px;
+      margin-top: 20px;
+
+
+      & .img {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20px;
+        margin-bottom: 0;
+
+        & img {
+          width: 100%;
+        }
+
+        &:hover {
+          -moz-box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
+        }
+      }
+      
+      & .name {
+        background-color: #3a3a38;
+        padding: 10px 40px 10px 20px;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        color: $white;
+
+        & h5 {
+          font-size: 26px;
+        }
+
+        & h6 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+
+  & .carousel {
+
+    .carousel-indicators li {
+      width: 80px;
+      height: 5px;
+    }
+
+    .carousel-indicators .active {
+      background-color: $green;
+    }
+
+    & .carousel-caption {
+      bottom: 20%;
+    }
+
+    & h1 {
+      color: $white;
+      font-size: 60px;
+      line-height: 36px;
+      text-shadow: 4px 3px 5px rgba(0,0,0,.31);
+      padding-left: 5%;
+      padding-right: 20%;
+      margin-bottom: 20px;
+    }
+
+    & h2 {
+      font-size: 36px;
+      line-height: 36px;
+      text-shadow: 4px 3px 5px rgba(0,0,0,.31);
+      padding-left: 5%;
+      padding-right: 20%;
+    }
+  }
+  
+  & hr {
+    height: 5px;
+    background: $grey-dark;
+  }
+
+  & .navbar {
+    font-weight: 600;
+
+    & .navbar-nav .active a {
+      color: $green;
+    }
+  }
+
+  & .catalogue {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:hover .btn-more {
+      background-color: $green;
+      text-decoration: none;
+    }
+
+    & h2 {
+      position: absolute;
+      top: 130px;
+      font-size: 23px;
+      color: $white;
+      font-weight: 600;
+      padding: 0 20px;
+    }
+
+    & .btn-more {
+      position: absolute;
+      bottom: 90px;
+      color: $white;
+      display: block;
+      padding: 10px 25px;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 3px solid $green;
+      background-color: rgba(87, 197, 204, 0.40);
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $green;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+/*!
+ * Header content
+ */
+.header {
+  min-height: 210px;
+  background: url("../images/header-bg.jpg") center -140px no-repeat;
+
+  &-title {
+    font-size: 38px;
+    line-height: 38px;
+    color: $grey;
+
+    @media screen and (max-width: 767px) {
+      font-size: 32px;
+      line-height: 28px;
+    }
+  }
+
+  & .call {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  & .btn-call {
+    background-color: $green;
+    color: $white;
+    display: block;
+    padding: 10px 25px;
+    font-size: 20px;
+
+    &:hover {
+      background: $green-dark;
+      text-decoration: none;
+    }
+  }
+
+  & nav.bg-light {
+    background: transparent !important;
+
+    & .navbar-nav {
+      width: 100%;
+
+      & .nav-link {
+        color: $black;
+        text-transform: uppercase;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        
+        &.active {
+          color: $green-dark;
+        }
+      }
+    }
+  }
+
+  .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover {
+    color: $white;
+    background-color: $green;
+  }
+
+
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+  }
+
+}
+

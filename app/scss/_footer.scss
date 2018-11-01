@@ -1,0 +1,100 @@
+/*!
+ * Footer content
+ */
+
+.footer {
+
+  & .address {
+    
+    & a {
+      color: $black;
+
+      &:hover {
+        color: $green;
+        text-decoration: none;
+      }
+    }
+    
+    &:hover h5 {
+      color: $green;
+    }
+
+    & h5 {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  }
+
+  & .map {
+    position: relative;
+
+    & .contact-form {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 15px;
+
+      & form {
+        padding: 25px;
+        background-color: #fefefe;
+        box-shadow: 2.5px 4.3px 43px rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        & input {
+          width: 100%;
+          text-align: center;
+          border: none;
+          border-bottom: 2px solid $green-dark;
+          font-size: 18px;
+          font-weight: 300;
+          font-variant: small-caps;
+          color: $black;
+
+          &:hover {
+            border-bottom: 2px solid $green;
+          }
+        }
+
+        & h5 {
+          font-size: 24px;
+        }
+
+        & .btn-call {
+          background-color: $green;
+          color: $white;
+          display: block;
+          padding: 10px 25px;
+          font-size: 20px;
+          text-align: center;
+          width: 278px;
+          -webkit-appearance: initial;
+
+          &:hover {
+            background: $green-dark;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  & .copyright {
+    color: $white;
+
+    & a {
+      color: $white;
+
+      &:hover {
+        color: $green;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  & .footer-bg {
+    background: $black;
+  }
+}
