@@ -208,6 +208,20 @@ a, a:hover {
 .header {
   min-height: 210px;
   background: url("../images/header-bg.jpg") center -140px no-repeat; }
+  .header-bg {
+    min-height: 270px;
+    background: url("../images/header-bg-2.jpg") center center no-repeat; }
+    .header-bg-title {
+      font-weight: 600;
+      color: #ffffff;
+      margin: 100px 20px auto;
+      vertical-align: middle;
+      line-height: 36px; }
+      .header-bg-title span {
+        display: block; }
+  .header-bg-1 {
+    min-height: 270px;
+    background: url("../images/header-bg-1.jpg") center center no-repeat; }
   .header-title {
     font-size: 38px;
     line-height: 38px;
@@ -265,6 +279,12 @@ a, a:hover {
 .main-bg {
   background: url("../images/main-bg.jpg") center bottom no-repeat; }
 
+.main-bg-1 {
+  background: url("../images/main-bg-1.jpg") center left no-repeat, url("../images/main-bg-2.jpg") right bottom no-repeat; }
+
+.main-bg-2 {
+  background: url("../images/main-bg-3.jpg") left bottom no-repeat; }
+
 .main .all {
   float: right;
   margin-top: -15px;
@@ -275,12 +295,22 @@ a, a:hover {
     color: #488391;
     text-decoration: none; }
 
+.main .text h4 {
+  color: #57c5cc;
+  font-weight: 600; }
+
+.main .text ul {
+  list-style: none; }
+  .main .text ul li:before {
+    content: "- ";
+    color: #57c5cc; }
+
 .main h2.title {
   font-size: 24px;
   background: url("../images/h-bg.png") left center no-repeat;
   width: auto;
   height: 72px;
-  line-height: 26px;
+  line-height: 24px;
   padding-left: 30px;
   font-weight: 500;
   display: -moz-box;
@@ -307,10 +337,10 @@ a, a:hover {
     text-decoration: none;
     color: #488391; }
 
-.main .jcarousel .slider {
+.main .slider {
   padding: 20px 0 40px;
   margin-top: 20px; }
-  .main .jcarousel .slider .img {
+  .main .slider .img {
     width: 100%;
     height: auto;
     text-align: center;
@@ -329,20 +359,20 @@ a, a:hover {
     margin-right: auto;
     margin-top: -20px;
     margin-bottom: 0; }
-    .main .jcarousel .slider .img img {
+    .main .slider .img img {
       width: 100%; }
-    .main .jcarousel .slider .img:hover {
+    .main .slider .img:hover {
       box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3); }
-  .main .jcarousel .slider .name {
+  .main .slider .name {
     background-color: #3a3a38;
     padding: 10px 40px 10px 20px;
     position: absolute;
     bottom: 0;
     left: 15px;
     color: #ffffff; }
-    .main .jcarousel .slider .name h5 {
+    .main .slider .name h5 {
       font-size: 26px; }
-    .main .jcarousel .slider .name h6 {
+    .main .slider .name h6 {
       font-size: 22px; }
 
 .main .carousel .carousel-indicators li {
@@ -414,6 +444,47 @@ a, a:hover {
       background-color: #57c5cc;
       text-decoration: none; }
 
+.main .message.borderred {
+  border: 3px solid #57c5cc; }
+  .main .message.borderred h3 {
+    color: #57c5cc;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 30px; }
+  .main .message.borderred form {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main .message.borderred form input {
+      width: 100%;
+      text-align: center;
+      border: none;
+      background-color: #eef0f1;
+      font-size: 18px;
+      font-weight: 300;
+      font-variant: small-caps;
+      color: #373737;
+      border-bottom: 2px transparent solid;
+      margin: 5px;
+      height: 54px;
+      display: block; }
+      .main .message.borderred form input:hover {
+        border-bottom: 2px solid #57c5cc; }
+    .main .message.borderred form input.btn-call {
+      background-color: #57c5cc;
+      border: none;
+      color: #ffffff;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      -webkit-appearance: initial;
+      height: 54px; }
+      .main .message.borderred form input.btn-call:hover {
+        background: #488391;
+        text-decoration: none;
+        cursor: pointer; }
+
 /*!
  * Footer content
  */
@@ -467,8 +538,9 @@ a, a:hover {
           border-bottom: 2px solid #57c5cc; }
       .footer .map .contact-form form h5 {
         font-size: 24px; }
-      .footer .map .contact-form form .btn-call {
+      .footer .map .contact-form form input.btn-call {
         background-color: #57c5cc;
+        border: none;
         color: #ffffff;
         display: block;
         padding: 10px 25px;
@@ -476,9 +548,10 @@ a, a:hover {
         text-align: center;
         width: 278px;
         -webkit-appearance: initial; }
-        .footer .map .contact-form form .btn-call:hover {
+        .footer .map .contact-form form input.btn-call:hover {
           background: #488391;
-          text-decoration: none; }
+          text-decoration: none;
+          cursor: pointer; }
 
 .footer .copyright {
   color: #ffffff; }

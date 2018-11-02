@@ -5,6 +5,28 @@
   min-height: 210px;
   background: url("../images/header-bg.jpg") center -140px no-repeat;
 
+  &-bg {
+    min-height: 270px;
+    background: url("../images/header-bg-2.jpg") center center no-repeat;
+
+    &-title {
+      font-weight: 600;
+      color: $white;
+      margin: 100px 20px auto;
+      vertical-align: middle;
+      line-height: 36px;
+
+      & span {
+        display: block;
+      }
+    }
+  }
+
+  &-bg-1 {
+    min-height: 270px;
+    background: url("../images/header-bg-1.jpg") center center no-repeat;
+  }
+
   &-title {
     font-size: 38px;
     line-height: 38px;

@@ -8,6 +8,14 @@
     background: url("../images/main-bg.jpg") center bottom no-repeat;
   }
 
+  &-bg-1 {
+    background: url("../images/main-bg-1.jpg") center left no-repeat, url("../images/main-bg-2.jpg") right bottom no-repeat;
+  }
+
+  &-bg-2 {
+    background: url("../images/main-bg-3.jpg") left bottom no-repeat;
+  }
+
   & .all {
     float: right;
     margin-top: -15px;
@@ -20,13 +28,31 @@
       text-decoration: none;
     }
   }
+  
+  & .text {
+    
+    & h4 {
+      color: $green;
+      font-weight: 600;
+    }
+
+    & ul {
+      list-style: none;
+
+      & li:before {
+        content: "- ";
+        color: $green;
+
+      }
+    }
+  }
 
   & h2.title {
     font-size: 24px;
     background: url("../images/h-bg.png") left center no-repeat;
     width: auto;
     height: 72px;
-    line-height: 26px;
+    line-height: 24px;
     padding-left: 30px;
     font-weight: 500;
     display: flex;
@@ -63,56 +89,54 @@
         //display: none;
       }
     }
+  }
+
+  & .slider {
+    padding: 20px 0 40px;
+    margin-top: 20px;
 
 
-    & .slider {
-      padding: 20px 0 40px;
-      margin-top: 20px;
+    & .img {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -20px;
+      margin-bottom: 0;
 
-
-      & .img {
+      & img {
         width: 100%;
-        height: auto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -20px;
-        margin-bottom: 0;
-
-        & img {
-          width: 100%;
-        }
-
-        &:hover {
-          -moz-box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
-          -webkit-box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
-        }
       }
-      
-      & .name {
-        background-color: #3a3a38;
-        padding: 10px 40px 10px 20px;
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-        color: $white;
 
-        & h5 {
-          font-size: 26px;
-        }
+      &:hover {
+        -moz-box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
+        box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.3);
+      }
+    }
 
-        & h6 {
-          font-size: 22px;
-        }
+    & .name {
+      background-color: #3a3a38;
+      padding: 10px 40px 10px 20px;
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      color: $white;
+
+      & h5 {
+        font-size: 26px;
+      }
+
+      & h6 {
+        font-size: 22px;
       }
     }
   }
-
 
   & .carousel {
 
@@ -196,6 +220,65 @@
       &:hover {
         background-color: $green;
         text-decoration: none;
+      }
+    }
+  }
+
+  & .message {
+
+    &.borderred {
+      border: 3px solid $green;
+
+      & h3 {
+        color: $green;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 30px;
+      }
+
+      & form {
+        //padding: 25px;
+        display: flex;
+        //justify-content: center;
+        //flex-direction: column;
+        //align-items: center;
+
+        & input {
+          width: 100%;
+          text-align: center;
+          border: none;
+          background-color: #eef0f1;
+          font-size: 18px;
+          font-weight: 300;
+          font-variant: small-caps;
+          color: $black;
+          border-bottom: 2px transparent solid;
+          margin: 5px;
+          height: 54px;
+          display: block;
+
+          &:hover {
+            border-bottom: 2px solid $green;
+          }
+        }
+
+        & input.btn-call {
+          background-color: $green;
+          border: none;
+          color: $white;
+          display: block;
+          font-size: 20px;
+          text-align: center;
+          width: 100%;
+          -webkit-appearance: initial;
+          height: 54px;
+
+          &:hover {
+            background: $green-dark;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
